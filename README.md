@@ -1,6 +1,6 @@
 
 
-# 👽ChashbotBot
+# 👽ChashBot
 
 ![project-image](https://socialify.git.ci/sharmachaitanya945/chashbot/image?description=1&descriptionEditable=AI%20chashbot%20&font=Rokkitt&language=1&name=1&owner=1&pattern=Formal%20Invitation&theme=Dark)
 
