@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="ChashBot is a minimal and simple ai chatbot.">
+    <meta name="keywords" content="chatbot, ai, python, flask, tailwindcss">
+    <meta name="creator" content="sharmachaitanya945">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👽</text></svg>">
+    <title>ChashBot</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Define styles for AI messages */
+        .ai-message {
+            background-color: #40E0D0; 
+            color: white;
+        }
+
+        
+    </style>
+</head>
+
+<body class="flex flex-col h-screen bg-gray-900 text-gray-200">
+    <header class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-gray-200 py-6 px-8 shadow-lg">
+        <h1 class="text-3xl font-extrabold">👽 ChashBot 🖥️</h1>
+    </header>
+    <div id="chat-box" class="flex-1 overflow-y-auto p-6 space-y-4">
+        <div class="flex justify-start">
+            <div class="ai-message bg-blue-500 text-white text-lg rounded-lg px-4 py-3 shadow-lg max-w-xl">
+                <p>Hello, how can chashbot help you today?</p>
+            </div>
+        </div>
+    </div>
+    <div class="input-bar bg-gray-800 p-4 flex items-center shadow-lg">
+        <input
+            class="flex-1 bg-gray-700 text-white rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            placeholder="Type your message..." type="text" id="user-input" />
+        <button onclick="sendMessage()"
+            class="ml-4 bg-purple-600 hover:bg-purple-700 text-white rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                <path d="m22 2-7 20-4-9-9-4Z" />
+                <path d="M22 2 11 13" />
+            </svg>
+            <span class="ml-2">Send</span>
+        </button>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
 
